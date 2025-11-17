@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- in the head is metadata used by the browser -->
+
+<head>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="images/home-solid.png">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="html,css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- icons -->
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=person" > -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=favorite,person,shopping_basket" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <button class="nav-button">
+            <img src="images/menu_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg">
+        </button>
+        <a href="index.html">
+            <img class="logo" src="images/TipToe Soles_Logo_colour.png">
+        </a>
+        <nav class="navigation" id="categories">
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="services.html">Services</a>
+        </nav>
+        <form id="search">
+            <input type="search" placeholder="search for a product" id="keywords" name="keywords">
+            <button type="submit">Search</button>
+        </form>
+        <nav class="navigation" id="user">
+            <a href="account.html">
+                <!-- Account -->
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </a>
+            <a href="wishlist.html">
+                <!-- Wishlist -->
+                <span class="material-symbols-outlined">
+                    favorite
+                </span>
+            </a>
+            <a href="cart.html">
+                <!-- Car1   q```    t -->
+                <span class="material-symbols-outlined">
+                    shopping_basket
+                </span>
+            </a>
+        </nav>
+    </header>
+    <div class="contact-banner"></div>
+    <!-- content -->
+    <main class="content">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Our Address</h3>
+                    <address>
+                        322 Avondale Road
+                        Enfield NSW 2133
+                    </address>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Customer Service</h3>
+                    <p>Telephone: 02 9210 5000
+                    Email us at: TipToeShoes@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6629.297168906964!2d151.18494191145473!3d-33.82138071649301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af1fe3b9b887%3A0x6fda02f3cc79cba1!2sTAFE%20NSW%20-%20St%20Leonards!5e0!3m2!1sen!2sau!4v1762767352690!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="card">
+                <form id="contact" action="https://example.com/form" method="post">
+                    <label for="sendername">You Name</label>
+                    <input id="sendername" name="sendername" type="text" placeholder="Jane Smith">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" placeholder="jane@example.com">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="5" placeholder="Hey there"></textarea>
+                    <div class="buttons">
+                        <button type="reset">Cancel</button>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav class="footer-menu">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="policies.html">Policies</a>
+        </nav>
+        <nav class="social">
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://tiktok.com">TikTok</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+        </nav>
+        <nav class="legal">
+            <a href="copyright.html">Copyright</a>
+            <a href="terms.html">Terms and Conditions</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
