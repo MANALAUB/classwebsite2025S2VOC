@@ -1,0 +1,69 @@
+/* Responsive adjustments for small screens */
+@media screen and (max-width: 480px) {
+
+    /* Show mobile menu button */
+    .nav-button {
+        display: block;
+    }
+
+    /* Resize logo for small devices */
+    .logo {
+        max-width: 65px; /* slightly larger than teacher's version */
+        padding: 6px;
+    }
+
+    /* Stack navigation links vertically */
+    #categories {
+        order: 4; /* changed order */
+        flex-direction: column;
+        width: 100%;
+        max-height: 0; /* hidden by default */
+        overflow: hidden;
+        transition: max-height 0.6s ease-in-out;
+    }
+
+    /* Open state for mobile nav */
+    #categories.open {
+        max-height: 55vh; /* slightly taller */
+    }
+
+    /* Adjust header padding for small screens */
+    .page-header {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    /* Banner heading size */
+    .banner h2 {
+        font-size: 2.1rem; /* a touch larger */
+    }
+
+    /* Reduce banner height */
+    .banner {
+        min-height: 42vh;
+    }
+
+    /* Content spacing */
+    .content {
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+    }
+
+    /* Footer social links stacking */
+    .social {
+        order: -2; /* move above other footer content */
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Footer legal links centered */
+    .legal {
+        justify-content: center;
+    }
+
+    /* Footer height adjustment */
+    .footer {
+        min-height: 32vh;
+    }
+
+}
