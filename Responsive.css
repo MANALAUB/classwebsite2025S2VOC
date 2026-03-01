@@ -67,3 +67,37 @@
     }
 
 }
+/* ===== Hamburger Menu for Mobile ===== */
+.nav-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#categories {
+  display: flex; /* default for desktop */
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-button {
+    display: block; /* show hamburger button */
+  }
+
+  #categories {
+    display: none; /* hide nav links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* adjust based on your header height */
+    right: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+  }
+
+  #categories.open {
+    display: flex; /* show when button clicked */
+  }
+}
